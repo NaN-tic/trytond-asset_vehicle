@@ -1,0 +1,63 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:asset.vehicle,asset:"
+msgid "Asset"
+msgstr "Actiu"
+
+msgctxt "field:asset.vehicle,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:asset.vehicle,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:asset.vehicle,driver:"
+msgid "Driver"
+msgstr "Conductor"
+
+msgctxt "field:asset.vehicle,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:asset.vehicle,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:asset.vehicle,technical_description:"
+msgid "Technical Description"
+msgstr "Descripción técnica"
+
+msgctxt "field:asset.vehicle,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:asset.vehicle,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "help:asset.vehicle,driver:"
+msgid "The driver that normally drives this vehicle"
+msgstr "El conductor habitual del vehiculo."
+
+msgctxt "model:asset.vehicle,name:"
+msgid "Vehicle"
+msgstr "Vehiculo"
+
+msgctxt "model:ir.action,name:act_asset_vehicle"
+msgid "Vehicles"
+msgstr "Vehiculos"
+
+msgctxt "model:ir.ui.menu,name:menu_asset_vehicle"
+msgid "Vehicles"
+msgstr "Vehiculos"
+
+msgctxt "view:asset.vehicle:"
+msgid "Vehicle"
+msgstr "Vehiculo"
+
+msgctxt "view:asset.vehicle:"
+msgid "Vehicles"
+msgstr "Vehiculos"

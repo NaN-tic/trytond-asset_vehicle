@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<form string="Vehicle">
+    <label name="asset"/>
+    <field name="asset"/>
+    <label name="driver"/>
+    <field name="driver"/>
+    <separator name="technical_description" colspan="4"/>
+    <field name="technical_description" colspan="4"/>
+</form>
