@@ -10,6 +10,7 @@ class Vehicle(ModelSQL, ModelView):
     __name__ = 'asset.vehicle'
     asset = fields.Many2One('asset', 'Asset', required=True,
         ondelete='CASCADE')
+    description = fields.Char('Description')
     driver = fields.Many2One('company.employee', 'Driver',
         help='The driver that normally drives this vehicle')
     technical_description = fields.Text('Technical Description')

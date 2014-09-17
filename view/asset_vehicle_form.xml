@@ -6,6 +6,8 @@
     <field name="asset"/>
     <label name="driver"/>
     <field name="driver"/>
+    <label name="description"/>
+    <field name="description" colspan="3"/>
     <separator name="technical_description" colspan="4"/>
     <field name="technical_description" colspan="4"/>
 </form>
