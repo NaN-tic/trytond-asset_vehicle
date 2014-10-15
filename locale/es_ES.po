@@ -8,11 +8,11 @@ msgstr "Actiu"
 
 msgctxt "field:asset.vehicle,create_date:"
 msgid "Create Date"
-msgstr "Fecha de creación"
+msgstr "Fecha creación"
 
 msgctxt "field:asset.vehicle,create_uid:"
 msgid "Create User"
-msgstr "Usuario de creación"
+msgstr "Usuario creación"
 
 msgctxt "field:asset.vehicle,description:"
 msgid "Description"
@@ -24,7 +24,7 @@ msgstr "Conductor"
 
 msgctxt "field:asset.vehicle,id:"
 msgid "ID"
-msgstr "Identificador"
+msgstr "ID"
 
 msgctxt "field:asset.vehicle,rec_name:"
 msgid "Name"
