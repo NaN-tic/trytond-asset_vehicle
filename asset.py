@@ -1,32 +1,35 @@
-#The COPYRIGHT file at the top level of this repository contains the full
-#copyright notices and license terms.
-from trytond.model import ModelSQL, ModelView, fields
+# The COPYRIGHT file at the top level of this repository contains the full
+# copyright notices and license terms.
 
-__all__ = ['Vehicle']
+from trytond.model import fields
+from trytond.pool import PoolMeta
+from trytond.pyson import Eval
 
 
-class Vehicle(ModelSQL, ModelView):
-    'Vehicle'
-    __name__ = 'asset.vehicle'
-    asset = fields.Many2One('asset', 'Asset', required=True,
-        ondelete='CASCADE')
-    description = fields.Char('Description')
+__all__ = ['Asset']
+
+__metaclass__ = PoolMeta
+
+_STATES = {
+    'invisible': Eval('type') != 'vehicle',
+    }
+_DEPENDS = ['type']
+
+
+class Asset:
+    __name__ = 'asset'
+
+    description = fields.Char('Description', states=_STATES, depends=_DEPENDS)
     driver = fields.Many2One('company.employee', 'Driver',
-        help='The driver that normally drives this vehicle')
-    technical_description = fields.Text('Technical Description')
-    active = fields.Function(fields.Boolean('Active'),
-        'get_active', searcher='search_active')
-
-    def get_rec_name(self, name):
-        return self.asset.name
+        help='The driver that normally drives this vehicle',
+        states=_STATES, depends=_DEPENDS)
+    technical_description = fields.Text('Technical Description',
+        states=_STATES, depends=_DEPENDS)
 
     @classmethod
-    def search_rec_name(cls, name, clause):
-        return [('asset.name',) + tuple(clause[1:])]
+    def __setup__(cls):
+        super(Asset, cls).__setup__()
+        vehicle = ('vehicle', 'Vehicle')
 
-    def get_active(self, name):
-        return self.asset.active
-
-    @classmethod
-    def search_active(cls, name, clause):
-        return [('asset.active',) + tuple(clause[1:])]
+        if vehicle not in cls.type.selection:
+            cls.type.selection.append(vehicle)

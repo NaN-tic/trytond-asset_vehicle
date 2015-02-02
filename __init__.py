@@ -6,5 +6,5 @@ from .asset import *
 
 def register():
     Pool.register(
-        Vehicle,
+        Asset,
         module='asset_vehicle', type_='model')
