@@ -2,53 +2,21 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "field:asset.vehicle,asset:"
-msgid "Asset"
-msgstr "Actiu"
-
-msgctxt "field:asset.vehicle,create_date:"
-msgid "Create Date"
-msgstr "Data creació"
-
-msgctxt "field:asset.vehicle,create_uid:"
-msgid "Create User"
-msgstr "Usuari creació"
-
-msgctxt "field:asset.vehicle,description:"
+msgctxt "field:asset,description:"
 msgid "Description"
 msgstr "Descripció"
 
-msgctxt "field:asset.vehicle,driver:"
+msgctxt "field:asset,driver:"
 msgid "Driver"
 msgstr "Conductor"
 
-msgctxt "field:asset.vehicle,id:"
-msgid "ID"
-msgstr "ID"
-
-msgctxt "field:asset.vehicle,rec_name:"
-msgid "Name"
-msgstr "Nom"
-
-msgctxt "field:asset.vehicle,technical_description:"
+msgctxt "field:asset,technical_description:"
 msgid "Technical Description"
 msgstr "Descripció tècnica"
 
-msgctxt "field:asset.vehicle,write_date:"
-msgid "Write Date"
-msgstr "Data modificació"
-
-msgctxt "field:asset.vehicle,write_uid:"
-msgid "Write User"
-msgstr "Usuari modificació"
-
-msgctxt "help:asset.vehicle,driver:"
+msgctxt "help:asset,driver:"
 msgid "The driver that normally drives this vehicle"
-msgstr "El conductor habitual del vehicle."
-
-msgctxt "model:asset.vehicle,name:"
-msgid "Vehicle"
-msgstr "Vehicle"
+msgstr "El conductor que condueix el vehicle habitualment. "
 
 msgctxt "model:ir.action,name:act_asset_vehicle"
 msgid "Vehicles"
@@ -58,10 +26,10 @@ msgctxt "model:ir.ui.menu,name:menu_asset_vehicle"
 msgid "Vehicles"
 msgstr "Vehicles"
 
-msgctxt "view:asset.vehicle:"
+msgctxt "selection:asset,type:"
 msgid "Vehicle"
 msgstr "Vehicle"
 
-msgctxt "view:asset.vehicle:"
-msgid "Vehicles"
-msgstr "Vehicles"
+msgctxt "view:asset:"
+msgid "Vehicle"
+msgstr "Vehicle"
